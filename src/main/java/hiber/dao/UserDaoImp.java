@@ -26,4 +26,6 @@ public class UserDaoImp implements UserDao {
       return query.getResultList();
    }
 
+   //public User findUserBy
+
 }

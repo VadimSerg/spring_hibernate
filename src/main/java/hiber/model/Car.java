@@ -8,7 +8,7 @@ public class Car {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "car_id")
+    @Column(name = "car_id",nullable = false)
     private Long id;
 
     @Column(name ="model")
@@ -66,7 +66,6 @@ public class Car {
         return "Car{" +
                 ", model='" + model + '\'' +
                 ", series=" + series +
-                ", user=" + user +
                 '}';
     }
 }

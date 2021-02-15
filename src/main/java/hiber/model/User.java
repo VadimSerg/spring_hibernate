@@ -19,8 +19,8 @@ public class User {
    @Column(name = "email")
    private String email;
 
-   @OneToOne(cascade = CascadeType.ALL,fetch = FetchType.LAZY)
-   @JoinColumn(name = "id")
+
+   @OneToOne(cascade = CascadeType.ALL)
    private  Car car;
 
    public User() {}
